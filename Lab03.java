@@ -39,13 +39,7 @@ public class Lab03 {
         }
         System.out.println("Min is " +  min );
         System.out.println("Max is " +  max );
-        for (int index = 0; index < ARR_LENGTH - 1; index++){
-            if(InArr[index] >= InArr[index + 1]){
-                max = InArr[index];
-                ARR_LENGTH = ARR_LENGTH - 1;
-                System.out.println(InArr[index]);
-            }
-        }
+       
     }
 
 }

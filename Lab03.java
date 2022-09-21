@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Lab03 {
     public static void main(String[] args) {
+        //Lab 3.1 3.2
         int ARR_LENGTH = 5;
         int[] InArr = new int[ARR_LENGTH];
         int oddcount = 0;

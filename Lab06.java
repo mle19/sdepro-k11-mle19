@@ -19,7 +19,11 @@ public class Lab06 {
         String[] minutes = minute.split(" minutes");
         System.out.println(Arrays.toString(minutes));
         //Lab 6.4
-        
+        String url = "https://www.google.com";
+        System.out.println(url);
+        url = currenttime.replaceAll("[^.com] || [^.net]", "");
+        System.out.println(url.toString);
+        url = currenttime.replaceAll("[^http] || [^https]", "");
 
 
 

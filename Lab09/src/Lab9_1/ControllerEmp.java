@@ -1,25 +1,29 @@
 package Lab9_1;
 
-import java.util.List;
-
 public class ControllerEmp {
-    public static int TotalSalary1(List<String> ContractorEmpList) {
-        int i = 0;
-        int TotalSalary = 0;
-        for (i = 0; i < ContractorEmpList.size(); i++) {
-            TotalSalary = TotalSalary + 40000;
+    public void TotalSalary(ControllerEmp total) {
+        Employee a = new Employee();
+        ContractorEmp b = new ContractorEmp();
+        FullTimeEmp c = new FullTimeEmp();
+        int ContractorEmpTT = 0;
+        int FullTimeEmpTT = 0;
+        int Total1 = ContractorEmpTT + FullTimeEmpTT;
+        if (a.typeEmp == 1) {
+            ContractorEmpTT = ContractorEmpTT + (b.NumberEmp * 40000);
+            Total1 = ContractorEmpTT + FullTimeEmpTT;
+        } else {
+            if (a.typeEmp == 2) {
+                FullTimeEmpTT = FullTimeEmpTT + (c.NumberEmp * 50000);
+                Total1 = ContractorEmpTT + FullTimeEmpTT;
+            }
+            System.out.println(Total1);
+
         }
-        return TotalSalary;
+
+
+
     }
 
-    public static int TotalSalary2(List<String> FullTimeEmpList) {
-        int i;
-        int TotalSalary = 0;
-        for (i = 0; i < FullTimeEmpList.size(); i++) {
-            TotalSalary = TotalSalary + 50000;
-        }
-        return TotalSalary;
-
-    }
 
 }
+

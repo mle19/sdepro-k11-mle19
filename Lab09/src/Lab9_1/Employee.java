@@ -1,46 +1,48 @@
 package Lab9_1;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
 
 public class Employee {
     public Employee(){}
-    public String name;
-    public int salary;
-    public Employee(int salary){
-        this.salary = salary;
-    }
-    public Employee(String name){
-        this.name = name;
-    }
-    public Employee(String name, int salary){
-        this.name = name;
-        this.salary = salary;
+    public int NumberEmp;
+    public int typeEmp;
+    public Employee(int typeEmp, int NumberEmp){
+        this.NumberEmp = NumberEmp;
+        this.typeEmp = typeEmp;
     }
 
-    public String getName() {
-        return name;
+    public int getNumberEmp() {
+        return NumberEmp;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNumberEmp(int numberEmp) {
+        NumberEmp = numberEmp;
     }
 
-    public int getSalary() {
-        return salary;
+    public int getTypeEmp() {
+        return typeEmp;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setTypeEmp(int typeEmp) {
+        this.typeEmp = typeEmp;
     }
-    List<Employee> EmpList = new ArrayList<>();
 
+    public void inputEmp(){
+        System.out.println("Number's employees: ");
+        Scanner scanner = new Scanner(System.in);
+        NumberEmp = scanner.nextInt();
+        System.out.println("Type of employee: ");
+        Scanner scanner2 = new Scanner(System.in);
+        typeEmp = scanner2.nextInt();
+    }
 
     @Override
     public String toString() {
         return "Employee{" +
-                "name='" + name + '\'' +
-                ", salary=" + salary +
+                "NumberEmp=" + NumberEmp +
+                ", typeEmp=" + typeEmp +
                 '}';
     }
 }
+
+

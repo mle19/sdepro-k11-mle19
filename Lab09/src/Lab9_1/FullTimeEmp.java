@@ -2,13 +2,13 @@ package Lab9_1;
 
 import java.util.Scanner;
 
-public class ContractorEmp extends Employee{
+public class FullTimeEmp extends Employee{
     public int NumberEmp;
     public int typeEmp;
-    public ContractorEmp(){
+    public FullTimeEmp(){
         super();
     }
-    public ContractorEmp(int NumberEmp, int typeEmp){
+    public FullTimeEmp(int NumberEmp, int typeEmp){
         super();
         this.NumberEmp = NumberEmp;
         this.typeEmp = typeEmp;
@@ -16,17 +16,20 @@ public class ContractorEmp extends Employee{
 
     @Override
     public int getNumberEmp() {
-        return this.NumberEmp;
+        return NumberEmp;
     }
 
+    @Override
     public void setNumberEmp(int numberEmp) {
         NumberEmp = numberEmp;
     }
 
-    public int getTypeEmp(int typeEmp) {
-        return this.typeEmp;
+    @Override
+    public int getTypeEmp() {
+        return typeEmp;
     }
 
+    @Override
     public void setTypeEmp(int typeEmp) {
         this.typeEmp = typeEmp;
     }
@@ -44,9 +47,10 @@ public class ContractorEmp extends Employee{
 
     @Override
     public String toString() {
-        return "ContractorEmp{" +
+        return "FullTimeEmp{" +
                 "NumberEmp=" + NumberEmp +
                 ", typeEmp=" + typeEmp +
                 '}';
     }
 }
+

@@ -30,9 +30,15 @@ public class ControllerEmp {
         for (Employee emp : employeeList) {
 
             if (emp.gettypeEmp() == 1) {
+<<<<<<< HEAD
                 total1 = total1 + emp.getnumberEmp() * 40000;
             } else if (emp.gettypeEmp() == 2) {
                 total2 = total2 + emp.getnumberEmp() * 50000;
+=======
+                total1 = emp.getnumberEmp() * 40000;
+            } else if (emp.gettypeEmp() == 2) {
+                total2 = emp.getnumberEmp() * 50000;
+>>>>>>> 4cac16e36a22f871e3c167a5035e18cdc8021735
             }
         }
 

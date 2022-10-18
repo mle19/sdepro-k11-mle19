@@ -4,42 +4,44 @@ import java.util.Scanner;
 
 public class Employee {
     public Employee(){}
-    public int NumberEmp;
+    public int numberEmp;
     public int typeEmp;
-    public Employee(int typeEmp, int NumberEmp){
-        this.NumberEmp = NumberEmp;
+    public Employee(int typeEmp, int numberEmp){
+        this.numberEmp = numberEmp;
         this.typeEmp = typeEmp;
     }
 
-    public int getNumberEmp() {
-        return NumberEmp;
+    public int getnumberEmp() {
+        return numberEmp;
     }
 
-    public void setNumberEmp(int numberEmp) {
-        NumberEmp = numberEmp;
+    public void setnumberEmp(int numberEmp) {
+        this.numberEmp = numberEmp;
     }
 
-    public int getTypeEmp() {
+    public int gettypeEmp() {
         return typeEmp;
     }
 
-    public void setTypeEmp(int typeEmp) {
+    public void settypeEmp(int typeEmp) {
         this.typeEmp = typeEmp;
     }
 
-    public void inputEmp(){
+    /*public Employee inputEmp(){
         System.out.println("Number's employees: ");
         Scanner scanner = new Scanner(System.in);
-        NumberEmp = scanner.nextInt();
+        numberEmp = scanner.nextInt();
         System.out.println("Type of employee: ");
         Scanner scanner2 = new Scanner(System.in);
         typeEmp = scanner2.nextInt();
-    }
+
+        return null;
+    }*/
 
     @Override
     public String toString() {
         return "Employee{" +
-                "NumberEmp=" + NumberEmp +
+                "NumberEmp=" + numberEmp +
                 ", typeEmp=" + typeEmp +
                 '}';
     }

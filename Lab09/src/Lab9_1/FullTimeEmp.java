@@ -1,11 +1,18 @@
 package Lab9_1;
 
-public class ContractorEmp extends Employee{
+import java.util.Scanner;
+
+public class FullTimeEmp extends Employee{
+
     @Override
-    public int gettypeEmp() {
-        return (1);
+    public int getnumberEmp() {
+        return super.getnumberEmp();
     }
 
+    @Override
+    public int gettypeEmp() {
+        return super.gettypeEmp();
+    }
     @Override
     public void setnumberEmp(int numberEmp) {
         super.setnumberEmp(numberEmp);
@@ -16,3 +23,4 @@ public class ContractorEmp extends Employee{
         super.settypeEmp(typeEmp);
     }
 }
+

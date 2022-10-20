@@ -1,10 +1,13 @@
 package Lab9_1;
 
 public class Employee {
-    public Employee(){}
+    public Employee() {
+    }
+
     public String name;
     public int salary;
-    public Employee(String name, int salary){
+
+    public Employee(String name, int salary) {
         this.name = name;
         this.salary = salary;
     }
@@ -24,9 +27,6 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
-
-
-
 
 
     @Override

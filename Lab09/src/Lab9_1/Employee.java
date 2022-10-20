@@ -1,50 +1,42 @@
 package Lab9_1;
 
-import java.util.Scanner;
-
 public class Employee {
     public Employee(){}
-    public int numberEmp;
-    public int typeEmp;
-    public Employee(int typeEmp, int numberEmp){
-        this.numberEmp = numberEmp;
-        this.typeEmp = typeEmp;
+    public String name;
+    public int salary;
+    public Employee(String name, int salary){
+        this.name = name;
+        this.salary = salary;
     }
 
-    public int getnumberEmp() {
-        return numberEmp;
+    public String getName() {
+        return name;
     }
 
-    public void setnumberEmp(int numberEmp) {
-        this.numberEmp = numberEmp;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int gettypeEmp() {
-        return typeEmp;
+    public int getSalary() {
+        return salary;
     }
 
-    public void settypeEmp(int typeEmp) {
-        this.typeEmp = typeEmp;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
-    /*public Employee inputEmp(){
-        System.out.println("Number's employees: ");
-        Scanner scanner = new Scanner(System.in);
-        numberEmp = scanner.nextInt();
-        System.out.println("Type of employee: ");
-        Scanner scanner2 = new Scanner(System.in);
-        typeEmp = scanner2.nextInt();
 
-        return null;
-    }*/
+
+
 
     @Override
     public String toString() {
         return "Employee{" +
-                "NumberEmp=" + numberEmp +
-                ", typeEmp=" + typeEmp +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
                 '}';
     }
 }
+
 
 

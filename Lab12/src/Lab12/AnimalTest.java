@@ -12,7 +12,7 @@ public class AnimalTest {
         List fly123 = racers.fly(Arrays.asList(dog, dove, horse));
         System.out.println(fly123);
         MoveAble winner = racers.getWinner(fly123);
-        System.out.println(winner);
+        System.out.println("The winner is " + winner);
 
     }
 }

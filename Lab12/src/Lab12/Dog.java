@@ -1,6 +1,9 @@
 package Lab12;
 
 public class Dog implements MoveAble, FlyAble{
+    String name = "Dog";
+
+
     @Override
     public boolean flyable() {
         return false;
@@ -13,6 +16,6 @@ public class Dog implements MoveAble, FlyAble{
 
     @Override
     public String toString() {
-        return flyable() + ", " + speed();
+        return name + " with " + speed() + " km/h";
     }
 }

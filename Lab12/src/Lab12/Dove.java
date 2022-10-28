@@ -1,6 +1,9 @@
 package Lab12;
 
 public class Dove implements MoveAble, FlyAble{
+    String name = "Dove";
+
+
     @Override
     public boolean flyable() {
         return true;
@@ -13,6 +16,6 @@ public class Dove implements MoveAble, FlyAble{
 
     @Override
     public String toString() {
-        return flyable() + ", " + speed();
+        return name + " with " + speed() + " km/h";
     }
 }
